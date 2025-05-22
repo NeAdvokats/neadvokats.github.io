@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>
+            Roflz_<
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8" name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <div class="main">
+            <div class="content" id="content">
+                <a class="theme-btn" onclick="themes()">Theme</a>
+                <img src="avatar.jpg" id="avatar" class="avatar">
+                <span class="title">NeAdvokats</span>
+                <span class="catalog">Junior Frontend</span>
+                <audio id="music" src="fourmorant.mp3"></audio>
+                <div class="classes">
+                    <div class="player">
+                        <a class="avatarMusicLink" onclick="turn()"><img id="avatarMusic" class="avatarMusic" src="avatarMusic.jpg"></a>
+                        <span>Best Music ( Click )</span>
+                    </div>
+                    <div class="team">
+                        <img class="avatarMusic" style="mix-blend-mode: normal;" src="team.jpg">
+                        <span>My Team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body> <!-- дальше пошло по трубам -->
+    <script>
+        let theme = false;
+        const themeElementBody = document.getElementById('body');
+        const themeElementDiv = document.getElementById('content');
+
+        function themes() {
+            if (theme) {
+                themeElementDiv.classList.remove('night_theme-content');
+                themeElementBody.classList.remove('night_theme-body');
+                theme = false;
+            } else {
+                themeElementDiv.classList.add('night_theme-content');
+                themeElementBody.classList.add('night_theme-body');
+                theme = true;
+            }
+        }
+
+        function turn() {
+            if (document.getElementById('music').paused) {
+                document.getElementById('avatarMusic').style.mixBlendMode = 'normal';
+                document.getElementById('music').play();
+                document.getElementById('avatar').classList.add('ripple');
+            } else {
+                document.getElementById('avatarMusic').style.mixBlendMode = 'luminosity';
+                document.getElementById('music').pause();
+                document.getElementById('avatar').classList.remove('ripple');
+            }
+        }
+    </script>
+</html>
