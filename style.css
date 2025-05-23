@@ -47,6 +47,7 @@ body {
     box-shadow: 0 0 8rem rgb(115, 148, 255);
     height: 350px;
     width: 400px;
+    position: relative;
     animation: anim 1s;
     transition: 100ms ease;
 }
@@ -115,9 +116,8 @@ body {
     display: flex;
     cursor: pointer;
     position: absolute;
-    top: 1;
-    right: 1;
-    align-self: end;
+    top: 1.25rem;
+    right: 1.25rem;
     user-select: none;
     transition: 200ms ease;
     &:hover{
