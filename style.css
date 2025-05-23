@@ -114,7 +114,9 @@ body {
     font-family: 'Jetbrains Mono', monospace;
     display: flex;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
+    top: 1;
+    right: 1;
     align-self: end;
     user-select: none;
     transition: 200ms ease;
