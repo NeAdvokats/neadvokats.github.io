@@ -118,6 +118,16 @@ body {
     mix-blend-mode: luminosity;
 }
 
+.night_theme-avatarMusic {
+    height: 128px;
+    width: 128px;
+    border: 2px solid rgb(255,255, 255);
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.75);
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    mix-blend-mode: luminosity;
+}
+
 .avatarMusicLink {
     cursor: pointer;
     transition: 200ms;
