@@ -125,7 +125,6 @@ body {
     box-shadow: 0 0 2rem rgba(255, 255, 255, 0.75);
     margin-bottom: 10px;
     border-radius: 1rem;
-    mix-blend-mode: luminosity;
 }
 
 .avatarMusicLink {
@@ -149,4 +148,5 @@ body {
         text-shadow: 0 0 1rem currentColor;
     }
 }
+
 
