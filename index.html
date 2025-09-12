@@ -25,7 +25,7 @@
                         <span>Favorite Music</span>
                     </div>
                     <div class="team">
-                        <img class="avatarMusic" style="mix-blend-mode: normal;" src="team.jpg">
+                        <img class="avatarMusic" id="avatarMusic" style="mix-blend-mode: normal;" src="team.jpg">
                         <span>My Team</span>
                     </div>
                 </div>
@@ -38,19 +38,21 @@
         const themeElementDiv = document.getElementById('content');
         const themeElementAvatar = document.getElementById('avatar');
         const themeElementCatalog = document.getElementById('catalog');
-        
+        const themeElementAvatarMusic = document.getElementById('avatarMusic');
         function themes() {
             if (theme) {
                 themeElementDiv.classList.remove('night_theme-content');
                 themeElementBody.classList.remove('night_theme-body');
                 themeElementAvatar.classList.remove('night_theme-avatar');
                 themeElementCatalog.classList.remove('night_theme-catalog');
+                themeElementAvatarMusic.classList.remove('night_theme-avatarMusic');
                 theme = false;
             } else {
                 themeElementDiv.classList.add('night_theme-content');
                 themeElementBody.classList.add('night_theme-body');
                 themeElementAvatar.classList.add('night_theme-avatar');
                 themeElementCatalog.classList.add('night_theme-catalog');
+                themeElementAvatarMusic.classList.add('night_theme-avatarMusic');
                 theme = true;
             }
         }
@@ -68,6 +70,7 @@
         }
     </script>
 </html>
+
 
 
 
