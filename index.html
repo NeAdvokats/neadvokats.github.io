@@ -15,7 +15,7 @@
         <div class="main">
             <div class="content" id="content">
                 <a class="theme-btn" onclick="themes()">Theme</a>
-                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGZ0eDBlNmc2dHhpeTZscHlybnVicHR2dXpwY3N2a2p6YmxpeXpnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vjhWTm6AvX2g0/giphy.gif" id="avatar" class="avatar">
+                <img src="https://media1.tenor.com/m/DTaGwlaEDbwAAAAC/povjisoo-cat-tiktok-dancing.gif" id="avatar" class="avatar">
                 <span class="title">NeAdvokats</span>
                 <span id="catalog" class="catalog">Junior Frontend</span>
                 <audio id="music" src="fourmorant.mp3"></audio>
@@ -43,14 +43,14 @@
             if (theme) {
                 themeElementDiv.classList.remove('night_theme-content');
                 themeElementBody.classList.remove('night_theme-body');
-                themeElementAvatar.classlist.remove('night_theme-avatar');
-                themeElementCatalog.classlist.remove('night_theme-catalog');
+                themeElementAvatar.classList.remove('night_theme-avatar');
+                themeElementCatalog.classList.remove('night_theme-catalog');
                 theme = false;
             } else {
                 themeElementDiv.classList.add('night_theme-content');
                 themeElementBody.classList.add('night_theme-body');
-                themeElementAvatar.classlist.add('night_theme-avatar');
-                themeElementCatalog.classlist.add('night_theme-catalog');
+                themeElementAvatar.classList.add('night_theme-avatar');
+                themeElementCatalog.classList.add('night_theme-catalog');
                 theme = true;
             }
         }
@@ -68,5 +68,6 @@
         }
     </script>
 </html>
+
 
 
