@@ -58,9 +58,19 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+
 .avatar {
     border-radius: 100%;
     border: 2px solid rgb(98, 137, 255);
+    height: 5rem;
+    width: 5rem;
+    margin: 0.5rem;
+    transition: 1s ease;
+}
+
+.night_theme-avatar {
+    border-radius: 100%;
+    border: 2px solid rgb(255, 255, 255);
     height: 5rem;
     width: 5rem;
     margin: 0.5rem;
@@ -78,6 +88,11 @@ body {
 .catalog {
     font-size: 0.9rem;
     color: rgb(159, 183, 255);
+}
+
+.night_theme-catalog {
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
 }
 
 .classes {
@@ -124,3 +139,4 @@ body {
         text-shadow: 0 0 1rem currentColor;
     }
 }
+
