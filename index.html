@@ -17,7 +17,7 @@
                 <a class="theme-btn" onclick="themes()">Theme</a>
                 <img src="avatar.jpg" id="avatar" class="avatar">
                 <span class="title">NeAdvokats</span>
-                <span class="catalog">Junior Frontend</span>
+                <span id="catalog" class="catalog">Junior Frontend</span>
                 <audio id="music" src="fourmorant.mp3"></audio>
                 <div class="classes">
                     <div class="player">
@@ -36,15 +36,21 @@
         let theme = false;
         const themeElementBody = document.getElementById('body');
         const themeElementDiv = document.getElementById('content');
-
+        const themeElementAvatar = document.getElementById('avatar');
+        const themeElementCatalog = document.getElementById('catalog');
+        
         function themes() {
             if (theme) {
                 themeElementDiv.classList.remove('night_theme-content');
                 themeElementBody.classList.remove('night_theme-body');
+                themeElementAvatar.classlist.remove('night_theme-avatar');
+                themeElementCatalog.classlist.remove('night_theme-catalog');
                 theme = false;
             } else {
                 themeElementDiv.classList.add('night_theme-content');
                 themeElementBody.classList.add('night_theme-body');
+                themeElementAvatar.classlist.add('night_theme-avatar');
+                themeElementCatalog.classlist.add('night_theme-catalog');
                 theme = true;
             }
         }
@@ -62,3 +68,4 @@
         }
     </script>
 </html>
+
