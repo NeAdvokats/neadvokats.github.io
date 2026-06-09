@@ -40,6 +40,14 @@
         const themeElementCatalog = document.getElementById('catalog');
         const themeElementAvatarMusic = document.getElementById('avatarMusic');
         const themeElementSteamLink = document.getElementById('steamLink');
+
+        themeElementDiv.classList.add('night_theme-content');
+        themeElementBody.classList.add('night_theme-body');
+        themeElementAvatar.classList.add('night_theme-avatar');
+        themeElementCatalog.classList.add('night_theme-catalog');
+        themeElementAvatarMusic.classList.add('night_theme-avatarMusic');
+        themeElementSteamLink.style.mixBlendMode = 'luminosity';
+        
         function themes() {
             if (theme) {
                 themeElementDiv.classList.remove('night_theme-content');
