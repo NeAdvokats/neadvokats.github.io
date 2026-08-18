@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NeAdvokats</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="information">
+          <div class="user-profile">
+            <img src="https://media.discordapp.net/avatars/1274914469797040141/217ad0bb3285945d994395a265eb4934?size=512" class="user-avatar"/>
+            <div class="profile-name">
+              I am <span class="blue">NeAdvokats</span> - <span class="green">[ N1tronium ]</span> 
+              <p class="profile-description">// диванный эксперт</p>
+            </div>
+          </div>
+          <div class="bio-section">
+            <p class="specs">// environment </p>
+            <p class="specs-list">>> dualboot: <span class="blue">CachyOS</span> (Arch-based) + <span class="blue">Windows 10</span></p>
+            <p class="specs">// work </p>
+            <p class="specs-list">>> armchair <span class="red">expert</span></p>
+          </div>
+
+          <div class="bio-section">
+            <p class="specs">// my friends </p>
+            <a class="specs-list first-friend"> >> @avudn</a> - <a href="https://github.com/avudn" class="green">[ github ]</a></a>
+            <div class="friend-overlay">
+              <img src="https://media.discordapp.net/avatars/1538360149062975509/88b946a1043efdc5fc2db379c870c2bf?size=512" alt="avatar" class="friend-avatar"/>
+              <div class="friend-name">
+                <span class="friend-title">avudn</span>
+                <p class="friend-description"><span class="blue">ГентуМания</span> - человек готов продать душу ради генту. Недавно застрелил комп кста.</p>
+                <img src="fetch.gif" class="friend-screenshot">
+              </div> 
+            </div>
+          </div>
+          <div class="music-player">
+            <img src="track.jpg" alt="now playing" class="player-cover"/>
+            <div class="player-info">
+            <div class="track-title">favorite track</div>
+            <div class="track-artist">now playing</div>
+            <div class="player-controls">
+            <button class="play-btn" onclick="togglePlay()">[ PLAY ]</button>
+          </div>
+          <audio id="audio-track" src="track.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <script>
+      const audio = document.getElementById('audio-track');
+      const playBtn = document.querySelector('.play-btn');1
+      function togglePlay() {
+        if (audio.paused) {
+          audio.play();
+          playBtn.textContent = '[ PAUSE ]';
+          playBtn.style.color = '#A3BE8C';
+          } else {
+            audio.pause();
+            playBtn.textContent = '[ PLAY ]';
+            playBtn.style.color = '#81A1C1';
+          }
+        }
+
+      document.querySelector('.first-friend').onmouseenter = () => {
+        document.querySelector('.friend-overlay').style.visibility = 'visible';
+        
+      };
+      document.querySelector('.first-friend').onmouseleave = () => {
+        document.querySelector('.friend-overlay').style.visibility = 'hidden';
+        
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: "JetBrains Mono", monospace, arial; 
+    font-weight: 600; 
+    color: #D8DEE9; 
+    background-image: url('main.jpg'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+a { 
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 20px;
+}
+
+.content { 
+    max-width: 650px;
+    background-color: rgba(26, 30, 37, 0.75); 
+    backdrop-filter: blur(13px); 
+    -webkit-backdrop-filter: blur(13px);
+}
+
+.information { 
+    padding: 30px;
+}
+
+.green { color: #A3BE8C; }
+.blue { color: #81A1C1; }
+.red { color: #BF616A; }
+
+.user-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 25px; 
+}
+
+.user-avatar {
+  height: 70px;
+  width: 70px;
+}
+
+.profile-description {
+    font-size: 15px;
+    font-weight: 400;
+    color: #EBCB8B;
+}
+
+.profile-name {
+  font-size: 17px;
+}
+
+.bio-section {
+  margin-bottom: 25px;
+}
+
+.specs {
+    color: #EBCB8B;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.specs-list {
+    font-size: 13px;
+    font-weight: 300;
+    color: #D8DEE9;
+    margin-bottom: 5px;
+    margin-left: 15px;
+
+}
+
+.music-player {
+    display: flex;
+    align-items: center;
+    background: rgba(46, 52, 64, 0.5); 
+    padding: 17px;
+}
+
+.player-cover {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    background-color: #4C566A;
+    margin-right: 18px;
+}
+
+.player-info {
+    flex-grow: 1;
+}
+
+.track-title {
+    font-size: 14px;
+    color: #E5E9F0;
+}
+
+.track-artist {
+    font-size: 12px;
+    color: #4C566A;
+    margin-top: 2px;
+}
+
+.player-controls {
+    margin-top: 6px;
+}
+
+.play-btn {
+    background: none;
+    border: none;
+    color: #81A1C1;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+}
+
+.play-btn:hover {
+    text-decoration: underline;
+}
+
+.friend-overlay {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  background-color: rgba(26, 30, 37, 0.9);
+  max-width: 415px;
+  padding: 15px;
+  visibility:hidden;
+}
+
+.friend-title {
+  font-size: 15px;
+}
+
+.friend-description {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.friend-name {
+  margin-left: 10px;
+}
+
+.friend-avatar {
+  height: 70px;
+  width: 70px;
+}
+
+
+.friend-screenshot {
+  width: 280px;
+}
