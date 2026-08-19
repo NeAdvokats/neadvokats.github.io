@@ -25,16 +25,19 @@
             <p class="specs-list">>> dualboot: <span class="blue">CachyOS</span> (Arch-based) + <span class="blue">Windows 10</span></p>
             <p class="specs">// work </p>
             <p class="specs-list">>> armchair <span class="red">expert</span></p>
+            <p class="specs">// my keyboard</p>
+            <p class="specs-list">>> Cidoo <span class="blue">QK61</span> V2</p>
             <p class="specs">// my friends </p>
-            <a class="specs-list first-friend"> >> @avudn</a> - <a href="https://github.com/avudn" class="green">[ github ]</a></a>
+            <a class="specs-list friend"> >> @avudn</a> - <a href="https://github.com/avudn" class="github-a green">[ github ]</a></a>
             <div class="friend-overlay">
               <img src="https://media.discordapp.net/avatars/1538360149062975509/88b946a1043efdc5fc2db379c870c2bf?size=512" alt="avatar" class="friend-avatar"/>
               <div class="friend-name">
                 <span class="friend-title">avudn</span>
-                <p class="friend-description"><span class="blue">ГентуМания</span> - человек готов продать душу ради генту. Недавно застрелил комп кста.</p>
+                <p class="friend-description"><span class="blue">ГентуМания</span> - человек готов продать душу ради генту. ( Также и с OXWM )</p>
                 <img src="fetch.gif" class="friend-screenshot">
               </div> 
             </div>
+            
           </div>
           <div class="music-player">
             <img src="track.jpg" alt="now playing" class="player-cover"/>
@@ -63,12 +66,12 @@
           }
         }
 
-      document.querySelector('.first-friend').onmouseenter = () => {
-        document.querySelector('.friend-overlay').style.visibility = 'visible';
+      document.querySelector('.friend').onmouseenter = () => {
+        document.querySelector('.friend-overlay').style.opacity = '1';
         
       };
-      document.querySelector('.first-friend').onmouseleave = () => {
-        document.querySelector('.friend-overlay').style.visibility = 'hidden';
+      document.querySelector('.friend').onmouseleave = () => {
+        document.querySelector('.friend-overlay').style.opacity = '0';
         
       };
     </script>
