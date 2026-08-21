@@ -67,12 +67,13 @@
         }
 
       document.querySelector('.friend').onmouseenter = () => {
+        document.querySelector('.friend-overlay').style.visibility = 'visible'; 
         document.querySelector('.friend-overlay').style.opacity = '1';
         
       };
       document.querySelector('.friend').onmouseleave = () => {
         document.querySelector('.friend-overlay').style.opacity = '0';
-        
+        document.querySelector('.friend-overlay').style.visibility = 'hidden'; 
       };
     </script>
   </body>
