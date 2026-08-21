@@ -158,6 +158,7 @@ a {
   max-width: 415px;
   padding: 15px;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s;
   backdrop-filter: blur(8px); 
   -webkit-backdrop-filter: blur(8px);
